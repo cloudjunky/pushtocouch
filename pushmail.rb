@@ -43,7 +43,7 @@ loader = TMail::UNIXMbox.new(file, nil, true)
     end
    end
 end
-
-files = Dir.glob('emails/*')
+path = "/Users/michael/Downloads/Fuck FBI Friday/Karim Hijazi & Unveillance/"
+files = Dir.glob(path + 'emails/*')
 puts "Processing #{files.count} files"
 files.each  { |file| pushtocouch(file) }
