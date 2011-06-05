@@ -33,7 +33,7 @@ loader = TMail::UNIXMbox.new(file, nil, true)
     mail_hash[:from] = mail.from 
     mail_hash[:from_addrs] = mail.from_addrs
     mail_hash[:subject] = mail.subject
-    mail_hash[:body] = escape_json(mail.body)
+#    mail_hash[:body] = escape_json(mail.body)
     mail_hash[:date] = mail.date  
 
     begin
